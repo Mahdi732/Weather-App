@@ -30,6 +30,7 @@
             'fade-in-up': 'fadeInUp 0.6s ease-out',
             'slide-in-left': 'slideInLeft 0.5s ease-out',
             'slide-in-right': 'slideInRight 0.5s ease-out',
+            'scale-in': 'scaleIn 0.3s ease-out',
           },
           keyframes: {
             float: {
@@ -51,6 +52,10 @@
             slideInRight: {
               '0%': { opacity: '0', transform: 'translateX(20px)' },
               '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            scaleIn: {
+              '0%': { opacity: '0', transform: 'scale(0.95)' },
+              '100%': { opacity: '1', transform: 'scale(1)' },
             },
           }
         }
@@ -302,29 +307,148 @@
       filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
     }
 
+    /* FIX: Remove opacity:0 from initial state to prevent content from disappearing */
     .animate-fade-in {
-      opacity: 0;
       animation: fadeIn 0.5s ease-in forwards;
     }
 
     .animate-fade-in-delay {
-      opacity: 0;
       animation: fadeIn 0.5s ease-in 0.2s forwards;
     }
 
     .animate-fade-in-delay-2 {
-      opacity: 0;
       animation: fadeIn 0.5s ease-in 0.4s forwards;
     }
 
     .animate-fade-in-delay-3 {
-      opacity: 0;
       animation: fadeIn 0.5s ease-in 0.6s forwards;
+    }
+
+    /* Day details modal animations */
+    .animate-scale-in {
+      animation: scaleIn 0.3s ease-out forwards;
+    }
+
+    /* Wind direction animation */
+    .wind-direction-indicator i {
+      transition: transform 0.5s ease;
+    }
+
+    /* Hover effects for day cards */
+    #day-card {
+      transition: all 0.3s ease;
+    }
+
+    #day-card:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Selected day styling */
+    .selected-day {
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Precipitation chart animation */
+    .precipitation-chart div {
+      transition: height 1s ease-out;
+    }
+
+    /* Color classes for UV and comfort levels */
+    .text-green-400 {
+      color: #4ade80;
+    }
+
+    .text-yellow-400 {
+      color: #facc15;
+    }
+
+    .text-orange-400 {
+      color: #fb923c;
+    }
+
+    .text-red-500 {
+      color: #ef4444;
+    }
+
+    .text-purple-600 {
+      color: #9333ea;
+    }
+
+    .text-blue-400 {
+      color: #60a5fa;
+    }
+
+    .text-blue-600 {
+      color: #2563eb;
+    }
+
+    .bg-green-400 {
+      background-color: #4ade80;
+    }
+
+    .bg-yellow-400 {
+      background-color: #facc15;
+    }
+
+    .bg-orange-400 {
+      background-color: #fb923c;
+    }
+
+    .bg-red-500 {
+      background-color: #ef4444;
+    }
+
+    .bg-purple-600 {
+      background-color: #9333ea;
+    }
+
+    .bg-blue-400 {
+      background-color: #60a5fa;
+    }
+
+    .bg-blue-600 {
+      background-color: #2563eb;
+    }
+
+    /* Modal backdrop blur */
+    .backdrop-blur-sm {
+      backdrop-filter: blur(4px);
+    }
+
+    /* Modal max height with scrolling */
+    .max-h-\[90vh\] {
+      max-height: 90vh;
+    }
+
+    /* Pulse animation for weather indicators */
+    @keyframes pulse-glow {
+      0%, 100% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+      }
+      50% {
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+      }
+    }
+
+    .sun-icon i, .moon-icon i {
+      animation: pulse-glow 3s infinite;
+    }
+
+    /* Weather tips icons */
+    .fas.fa-lightbulb, 
+    .fas.fa-umbrella, 
+    .fas.fa-mitten, 
+    .fas.fa-sun, 
+    .fas.fa-temperature-high, 
+    .fas.fa-temperature-low, 
+    .fas.fa-cloud-rain {
+      filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
     }
   </style>
 </head>
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
 </body>
 </html>
