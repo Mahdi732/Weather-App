@@ -1,0 +1,37 @@
+Documentation Détaillée de l'Application Météo
+Introduction
+Cette application météo a été développée dans le but d'offrir une expérience simple et intuitive permettant aux utilisateurs d'accéder rapidement aux informations météorologiques d'une ville spécifique.
+Le projet vise à combiner accessibilité, précision des données et design moderne pour rendre la consultation météo agréable et efficace.
+
+Objectif du Projet
+L'objectif principal est de fournir une interface claire où l'utilisateur peut rechercher une ville et obtenir instantanément ses conditions météorologiques actuelles, ainsi que des prévisions à court terme.
+L'application propose également plusieurs fonctionnalités complémentaires, telles que la prévision à long terme, la détection de la localisation de l'utilisateur et la possibilité de changer la langue de l'interface.
+
+Technologies Utilisées
+L'application est construite avec React.js pour bénéficier de composants réactifs et d'une gestion d'état efficace.
+Axios est utilisé pour effectuer les appels HTTP vers l'API météo choisie, OpenWeatherMap.
+Un système optionnel de stylisation a été ajouté avec TailwindCSS ou Bootstrap afin d'assurer un design responsive et moderne.
+Enfin, l'intégration de Chart.js permet l'affichage de graphiques représentant les tendances météorologiques.
+
+Instructions d'Installation
+Pour installer l'application, il faut d'abord récupérer les fichiers du projet en clonant le dépôt.
+Une fois le projet récupéré, il est nécessaire d'accéder au dossier correspondant et d'installer toutes les dépendances nécessaires via le gestionnaire de paquets.
+L'application utilise des variables d'environnement pour sécuriser la clé API et l'URL de base de l'API météo. Il faudra donc créer un fichier d'environnement à la racine du projet contenant ces informations.
+Après avoir configuré l'environnement, l'application peut être lancée en mode développement, et sera accessible via un navigateur web à l'adresse locale habituelle.
+
+Instructions d'Utilisation
+Après avoir ouvert l'application, l'utilisateur arrive sur une page principale lui permettant de saisir le nom d'une ville dans un champ de recherche.
+En validant la recherche, les conditions météorologiques actuelles s'affichent, incluant la température, l'humidité, la vitesse du vent ainsi qu'une brève description du temps.
+L'application propose également les prévisions pour les heures suivantes afin de donner une vision plus complète de l'évolution météo.
+En option, l'utilisateur peut activer la géolocalisation pour obtenir automatiquement la météo de sa position actuelle.
+Il est aussi possible de choisir la langue d'affichage pour une meilleure accessibilité.
+
+Décisions de Conception
+La conception de l'application repose sur le principe de simplicité et d'efficacité. L'interface utilisateur est volontairement épurée afin de se concentrer uniquement sur les informations importantes.
+La logique des appels API est isolée dans des services dédiés pour respecter le principe de séparation des responsabilités.
+Afin d'améliorer la performance, les résultats sont temporairement sauvegardés localement pour éviter des appels réseau inutiles en cas de recherches répétées.
+La structure du projet a été pensée pour être évolutive, permettant l'ajout futur de fonctionnalités telles que la gestion de plusieurs villes favorites, l'intégration de notifications ou encore la prise en charge d'autres fournisseurs de données météo.
+
+Conclusion
+Cette application météo offre une solution fiable, rapide et agréable pour la consultation des conditions météorologiques.
+Grâce à l'utilisation de React.js et d'une architecture bien structurée, elle garantit une expérience utilisateur optimale tout en étant prête à évoluer selon les besoins futurs.
