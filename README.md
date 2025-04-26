@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+🌦️ Application Météo - React.js
+Description
+Cette application météo permet aux utilisateurs d'obtenir rapidement des informations météorologiques précises pour une ville spécifique.
+Elle propose une interface conviviale, moderne et simple d'utilisation.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fonctionnalités Principales
+Affichage des conditions météorologiques actuelles :
+Température, humidité, vitesse du vent et description générale de la météo pour une ville spécifiée.
 
-## Available Scripts
+Recherche par ville :
+L'utilisateur peut saisir le nom d'une ville pour obtenir les prévisions correspondantes.
 
-In the project directory, you can run:
+Prévisions à court terme :
+Affichage des conditions météorologiques prévues pour les prochaines heures.
 
-### `npm start`
+Interface utilisateur conviviale :
+Design clair et attrayant, avec des éléments visuels adaptés pour représenter les conditions météo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Fonctionnalités Bonus
+Prévisions à long terme :
+Consultation des prévisions météorologiques pour plusieurs jours.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Géolocalisation :
+Détection automatique de la position de l'utilisateur pour afficher la météo locale sans saisie manuelle.
 
-### `npm test`
+Support multilingue :
+Interface disponible en plusieurs langues pour s'adapter aux préférences de l'utilisateur.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Graphiques et visualisations :
+Affichage de tendances météorologiques à l'aide de graphiques (température, humidité, etc.).
 
-### `npm run build`
+Technologies Utilisées
+React.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Axios
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+OpenWeatherMap API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+TailwindCSS ou Bootstrap (pour le design)
 
-### `npm run eject`
+Chart.js (pour les visualisations, en option)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Installation
+Cloner le projet depuis le dépôt GitHub.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Installer les dépendances du projet avec npm.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Créer un fichier .env pour configurer la clé API de météo.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Lancer l'application en mode développement.
 
-## Learn More
+Utilisation
+Rechercher une ville via la barre de recherche.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Consulter la météo actuelle et les prévisions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utiliser la géolocalisation pour obtenir la météo automatiquement.
 
-### Code Splitting
+Changer de langue via les paramètres si disponible.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Avenir du projet
+Des améliorations futures sont prévues, telles que la sauvegarde de villes favorites, l'ajout d'alertes météo, et l'optimisation des performances pour offrir une expérience encore plus fluide.
